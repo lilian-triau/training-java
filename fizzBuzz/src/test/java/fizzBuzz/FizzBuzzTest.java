@@ -1,44 +1,46 @@
 package fizzBuzz;
 
+
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
 import org.junit.Test;
 
+
 public class FizzBuzzTest {
 
+	FizzBuzz fizzBuzz = new FizzBuzz();
+	
 	@Test
-	void createFizzBuzzListExpectResultSizeToBe100() {
-		FizzBuzz fizzBuzz = new FizzBuzz();
+	public void createFizzBuzzListExpectResultSizeToBe100() {
+		int expected = 100;
+		
 		List<String> actual = fizzBuzz.createFizzBuzzList();
-		assertEquals(100, actual.size());
+
+		assertEquals(expected, actual.size());
 	}
 
 	@Test
-	void createFizzBuzzListExpectFirstOccurenceToBe1() {
-		FizzBuzz fizzBuzz = new FizzBuzz();
+	public void createFizzBuzzListExpectFirstOccurenceToBe1() {
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("1", actual.get(0));
 	}
 
 	@Test
-	void createFizzBuzzListExpectThirdOccurenceToBeFizz() {
-		FizzBuzz fizzBuzz = new FizzBuzz();
+	public void createFizzBuzzListExpectThirdOccurenceToBeFizz() {
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("Fizz", actual.get(2));
 	}
 
 	@Test
-	void createFizzBuzzListExpectFifthOccurenceToBeBuzz() {
-		FizzBuzz fizzBuzz = new FizzBuzz();
+	public void createFizzBuzzListExpectFifthOccurenceToBeBuzz() {
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("Buzz", actual.get(4));
 	}
 
 	@Test
-	void createFizzBuzzListExpectFifteenOccurenceToBeFizzBuzz() {
-		FizzBuzz fizzBuzz = new FizzBuzz();
+	public void createFizzBuzzListExpectFifteenOccurenceToBeFizzBuzz() {
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("FizzBuzz", actual.get(14));
 	}
