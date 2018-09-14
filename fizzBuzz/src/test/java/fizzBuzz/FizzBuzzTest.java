@@ -1,12 +1,12 @@
 package fizzBuzz;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class FizzBuzzTest {
+public class FizzBuzzTest {
 
 	@Test
 	void createFizzBuzzListExpectResultSizeToBe100() {
@@ -21,21 +21,21 @@ class FizzBuzzTest {
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("1", actual.get(0));
 	}
-	
+
 	@Test
 	void createFizzBuzzListExpectThirdOccurenceToBeFizz() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("Fizz", actual.get(2));
 	}
-	
+
 	@Test
 	void createFizzBuzzListExpectFifthOccurenceToBeBuzz() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		List<String> actual = fizzBuzz.createFizzBuzzList();
 		assertEquals("Buzz", actual.get(4));
 	}
-	
+
 	@Test
 	void createFizzBuzzListExpectFifteenOccurenceToBeFizzBuzz() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
