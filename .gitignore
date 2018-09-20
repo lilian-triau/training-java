@@ -24,3 +24,6 @@ hs_err_pid*
 
 # IntelliJ IDE
 .idea/
+
+# Maven project
+*.iml
