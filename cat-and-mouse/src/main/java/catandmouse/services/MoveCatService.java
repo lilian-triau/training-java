@@ -2,11 +2,12 @@ package catandmouse.services;
 
 public class MoveCatService {
 
+    int jumpCat = 3;
     /**
      * Suivant la position le chat attrape t'il la souris ?
      *
      * @param position position du chat face à la souris
-     * @return
+     * @return string : indique si la souris est attapée ou enfuit
      */
     public String attack(String position) throws Exception {
         char cat = position.charAt(0);
@@ -19,6 +20,12 @@ public class MoveCatService {
             throw new Exception();
         }
 
-        return "";
+        int distance = position.length() - 2;
+
+        if(distance > jumpCat){
+            return "Escaped!";
+        }else{
+            return "Caught!";
+        }
     }
 }
