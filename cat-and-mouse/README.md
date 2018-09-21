@@ -10,11 +10,11 @@ C...m returns 'Caught!' <-- as there are three characters between the two, the c
 
 ## Focus technique
 
-* CrÃ©er un projet maven
+* Créer un projet maven
 * Utiliser jUnit
 * Avoir un code clair et concis (clean code, Kiss)
 * utiliser l'approche TDD (test first -> il plante -> on le fait passer -> on refactor -> on recommence)
 
 ## Acknowledgments
 
-Kata trouvÃ© sur https://www.codewars.com/kata/cat-and-mouse-easy-version
+Kata trouvé sur https://www.codewars.com/kata/cat-and-mouse-easy-version
