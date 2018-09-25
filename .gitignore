@@ -75,3 +75,6 @@ local.properties
 .scala_dependencies
 .worksheet
 /target/
+
+# Maven project
+*.iml
